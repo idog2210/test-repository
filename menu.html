@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lan="he" dir="rtl">
+    <head>
+        <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alef:wght@400;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>מסעדת RACHET</title>
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <button class="navigator"><a href="./homePage.html">עמוד בית</a></button>
+                <button class="navigator"><a href="./menu.html">תפריט עיקריות</a></button>
+                <button class="navigator"><a href="./dessert.html">תפריט קינוחים</a></button>
+                <button class="navigator"><a href="cart.html">עגלת קניות</a></button>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="rest-title">מסעדת Rachet</h1>
+            <h2 class=table>תפריט עיקריות</h2>
+            <div class="table">
+                <table class="menu-table" id="menu-table">
+                    <thead>
+                        <tr>
+                            <th>מנה</th>
+                            <th class="price">מחיר<button id="sortPrice">↑↓</button></th>
+                            <th class="description">תיאור</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="menuRow">
+                            <td class="dish">המבורגר</td>
+                            <td>64</td>
+                            <td>קציצת בקר מונחת בין שתי לחמניות בריוש על מצע של חסה, עגבנייה, מלפפון חמוץ, בצל סגול, רוטב צ'יפולטה ורוטב הבית</td>
+                            <td class="add"><button>+</button></td>
+                        </tr>
+                        <tr class="menuRow">
+                            <td class="dish">פיצה</td>
+                            <td>66</td>
+                            <td>בצק מקומי עם ציפוי גבינת מוצרלה ורוטב עבניות ועליו עלי אורגנו ותיבול לפי מנת השף</td>
+                            <td class="add"><button>+</button></td>                            
+                        </tr>
+                        <tr class="menuRow">
+                            <td class="dish">סושי</td>
+                            <td>50</td>
+                            <td>סלמון אפוי עם אבוקדו ומלפפון מטוגן עטופים באורז צלוי ואצות מהקצבייה שלנו</td>
+                            <td class="add"><button>+</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="remark">*כל המנות מוגשות עם תוספת לבחירה</p>
+            
+            <section class="menu">
+                <figure id="burger-img">
+                    <img src="https://img.freepik.com/premium-photo/burgers-high-quality-4k-hdr_889056-32306.jpg" alt="המבורגר הבית" height="240px">
+                    <figcaption class="remark">המבורגר הבית</figcaption>
+                </figure>
+                <figure id="pizza-img">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmVhcG9saXRhbiUyMHBpenphfGVufDB8fDB8fHww" alt="פיצה נפוליטנה" height="240px">
+                    <figcaption class="remark">פיצה נפוליטנה</figcaption>
+                </figure>
+                <figure id="sushi-img">
+                    <img src="https://t4.ftcdn.net/jpg/12/37/72/37/360_F_1237723706_80wDFrnlKxDnKG1rtCAqtmQ6WqUrEdoV.jpg" alt="סושי סלמון אפוי" height="240px">
+                    <figcaption class="remark">סושי סלמון אפוי</figcaption>
+                </figure>
+            </section>
+        </main>        
+    </body>
+</html>

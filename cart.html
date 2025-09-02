@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+    <head>
+        <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alef:wght@400;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>מסעדת RACHET</title>
+        <script src="./main.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <button class="navigator"><a href="./homePage.html">עמוד בית</a></button>
+                <button class="navigator"><a href="./menu.html">תפריט עיקריות</a></button>
+                <button class="navigator"><a href="./dessert.html">תפריט קינוחים</a></button>
+                <button class="navigator"><a href="cart.html">עגלת קניות</a></button>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="rest-title">מסעדת Rachet</h1>
+            <h2>עגלת קניות</h2>
+
+            <div class="table">
+                <form id="addFromSelect">
+                    <select id="dishInput">
+                        <option class="dish" value="המבורגר">המבורגר</option>
+                        <option class="dish" value="פיצה">פיצה</option>
+                        <option class="dish" value="סושי">סושי</option>
+                        <option class="dish" value="סופלה">סופלה</option>
+                        <option class="dish" value="גלידה">גלידה</option>
+                        <option class="dish" value="מלבי">מלבי</option>
+                    </select>
+                    <button type="submit">הוסף לעגלה</button>
+                </form>
+            </div>
+
+            <div class="table">
+                <table id="shoppingCart">
+                    <thead>
+                        <tr>
+                            <th class="dish">שם המנה</th>
+                            <th class="quantity">כמות</th>
+                            <th class="price">מחיר</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <button id="submitOrder" type="button">שליחת הזמנה</button>
+                    <p id="minOrderMsg"></p>
+            
+
+        </main>
+    </body>
+</html>

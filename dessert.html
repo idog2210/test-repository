@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lan="he" dir="rtl">
+    <head>
+        <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alef:wght@400;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>מסעדת RACHET</title>
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <button class="navigator"><a href="./homePage.html">עמוד בית</a></button>
+                <button class="navigator"><a href="./menu.html">תפריט עיקריות</a></button>
+                <button class="navigator"><a href="./dessert.html">תפריט קינוחים</a></button>
+                <button class="navigator"><a href="cart.html">עגלת קניות</a></button>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="rest-title">מסעדת Rachet</h1>
+            <h2>תפריט קינוחים</h2>
+            <div class="table">
+                <table class="menu-table" id="menu-table">
+                    <thead>
+                        <tr>
+                            <th>קינוח</th>
+                            <th class="price">מחיר<button id="sortPrice">↑↓</button></th>
+                            <th class="description">תיאור</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="menuRow">
+                            <td class="dish">סופלה</td>
+                            <td class="priceCell">23</td>
+                            <td>מאפה קל ואוורירי בטעם שוקולד, מושג עם קצפת</td>
+                            <td class="add"><button>+</button></td>
+                        </tr>
+                        <tr class="menuRow">
+                            <td class="dish">גלידה</td>
+                            <td class="priceCell">18</td>
+                            <td>שני כדורי גלידה איטלקיים בטעמים לבחירה: שוקולד, וניל, תות, פיסטוק, סורבה מנגו</td>
+                            <td class="add"><button>+</button></td>
+                        </tr>
+                        <tr class="menuRow">
+                            <td class="dish">מלבי</td>
+                            <td class="priceCell">20</td>
+                            <td>מלבי הבית מוגש עם מי ורדים, בוטנים קלויים ורוטב הבית</td>
+                            <td class="add"><button>+</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <section class="menu">
+                <figure>
+                    <img src="https://chef-lavan.co.il/wp-content/uploads/old-storage/uploads/images/f7b1f7ffda3fa42366573fc96f114de2.jpg" alt="סופלה שוקולד" height="240px">
+                    <figcaption class="remark">סופלה שוקולד</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg" alt="טעמי הגלידה שלנו" height="240px">
+                    <figcaption class="remark">גלידות הבית</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLyF3TeYtRhwaWuzy9hDjVb0e52gXGHH8O0w&s" alt="המלבי שלנו" height="240px">
+                    <figcaption class="remark">המלבי שלנו</figcaption>
+                </figure>
+            </section>
+        </main>
+    </body>
+</html>

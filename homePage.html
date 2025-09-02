@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lan="he" dir="rtl">
+    <head>
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alef:wght@400;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital@1&display=swap" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>מסעדת RACHET</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <button class="navigator"><a href="./homePage.html">עמוד בית</a></button>
+                <button class="navigator"><a href="./menu.html">תפריט עיקריות</a></button>
+                <button class="navigator"><a href="./dessert.html">תפריט קינוחים</a></button>
+                <button class="navigator"><a href="cart.html">עגלת קניות</a></button>
+            </nav>
+        </header>
+
+
+        <div id="about">
+            <h1 class="rest-title">מסעדת Rachet</h1>
+            <h2>על המסעדה</h2>
+            <p >מסעדת RACHET היא מסעדה משפחתית שקיימת מאז שנת 1954 והוקמה לראשונה בעיר חיפה.</p>
+            <p>המסעדה קמה כדי להעביר את התרבות המשפחתית ולהציג מגוון רחב של מנות כדי להביא את החוויה הקולינרית הטובה ביותר.</p>
+            <figure>
+                <img src="https://northwoodoffice-assets.imgix.net/goBallantyne/images/heroes/NORTHITALIA156-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-debug=&fp-x=0.4993&fp-y=0.7915&fp-z=1&h=1080&ixlib=php-3.1.0&q=80&v=1718293452&w=1920" alt="תמונה של המסעדה" height="240px" id="rest-img">
+                <figcaption class="remark">מסעדה Rachet בשעות פעילות</figcaption>
+            </figure>
+        </div>
+        <hr>
+
+        <div class="register">
+            <h2>הזמנת מקום למסעדה</h2>
+            <form>
+                <label for="name">שם מלא</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="phoneNumber">מספר טלפון</label>
+                <input type="[0,9]{10,10}" id="phoneNumber" name="phoneNumber" value="05" required dir="ltr"><br>
+                <label for="guests">כמות אורחים</label>
+                <input type="number" min="1" max="8" step="1" id="guests" name="guests"><br>
+                <label for="date">תאריך</label>
+                <input type="date" id="date" name="date"><br>
+                <label for="hour">שעת הזמנה</label>
+                <input type="time" id="hour" name="hour" step="900" min="09:00" max="20:00"><br>
+                <label for="type">סוג מקום</label>
+                <select id="type" name="type">
+                    <option value="regular">רגיל</option>
+                    <option value="vip">VIP [בתוספת תשלום]</option>
+                    <option value="family">משפחתי [עם תפריט ילדים]</option>
+                    <option value="accessible">מונגש</option>
+                </select><br>
+                <input type="submit" value="רישום מקום">
+            </form>
+        </div>
+        <hr>
+        <footer>
+            <h2>שעות פתיחה ופרטים נוספים:</h2>
+            <div id="HoP">
+                <h3>שעות פתיחה:</h3>
+                <p>ימים א'-ו': 9:00-20:00. יום ש': סגור.</p>
+            </div>
+            <div id="contact">
+                <h3>פרטי קשר:</h3>
+                <p>מס' טלפון: 09-400-1413</p>
+                <p>כתובת וסניפים: האלמוגן 13, חיפה. קיבוץ גלויות 15, צפת. זאב ז'בוטינסקי 41, תל אביב. סימבה 401, מעלות תרשיחא.</p>
+                <p>מייל: rest@rachet.com</p>
+            </div>
+        </footer>
+    </body>
+</html>
